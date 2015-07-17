@@ -54,13 +54,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1437166899;
+        genesis.nTime    = 1437173200;
         genesis.nBits    = 0x1e0ffff0;
-        genesis.nNonce   = 2229198;
+        genesis.nNonce   = 1910335;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000077c6c6761ba91585eca0e4fa6d082c8145664ddaba8b29bc7d973220ec5"));
-        assert(genesis.hashMerkleRoot == uint256("0x2f5f1621073cfb875c9028bc67f8c110e1baccd5574aee19c5830a7c5e0af605"));
+        assert(hashGenesisBlock == uint256("0x00000c0562e8b4ccb9861557c1920168feafcb44c25d3e01025a75f5ce22a5d7"));
+        assert(genesis.hashMerkleRoot == uint256("0xae7744a43886eab5f5968a01cb68580de75a743da9f8d406adde2c76d2cec245"));
 		vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of( 76);                    // Dash addresses start with 'X'
@@ -119,11 +119,11 @@ public:
         strDataDir = "testnet3";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1437166899;
-        genesis.nNonce = 2229198;
+        genesis.nTime = 1437173200;
+        genesis.nNonce = 1910335;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000077c6c6761ba91585eca0e4fa6d082c8145664ddaba8b29bc7d973220ec5"));
+        assert(hashGenesisBlock == uint256("0x00000c0562e8b4ccb9861557c1920168feafcb44c25d3e01025a75f5ce22a5d7"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -156,14 +156,14 @@ public:
         pchMessageStart[3] = 0xdc;
         nSubsidyHalvingInterval = 150;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
-        genesis.nTime = 1437156154;
+        genesis.nTime = 1437173200;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 699760;
+        genesis.nNonce = 1910335;
         nDefaultPort = 19515;
         strDataDir = "regtest";
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000004fd52e4902e24a7cc5da867b2662266cb78742ea9067888b5dbe3bb3ca1"));
+        assert(hashGenesisBlock == uint256("0x00000c0562e8b4ccb9861557c1920168feafcb44c25d3e01025a75f5ce22a5d7"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }
