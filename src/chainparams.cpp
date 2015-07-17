@@ -54,13 +54,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1437155119;
+        genesis.nTime    = 1437166899;
         genesis.nBits    = 0x1e0ffff0;
-        genesis.nNonce   = 1352463;
+        genesis.nNonce   = 2229198;
 
-        hashGenesisBlock = (true && genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000791580f467f1d6f484ca324018af0b727755db2768d0007ce1896b3ed41"));
-        assert(genesis.hashMerkleRoot == uint256("0xae7744a43886eab5f5968a01cb68580de75a743da9f8d406adde2c76d2cec245"));
+        hashGenesisBlock = genesis.GetHash();
+        assert(hashGenesisBlock == uint256("0x0000077c6c6761ba91585eca0e4fa6d082c8145664ddaba8b29bc7d973220ec5"));
+        assert(genesis.hashMerkleRoot == uint256("0x2f5f1621073cfb875c9028bc67f8c110e1baccd5574aee19c5830a7c5e0af605"));
 		vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of( 76);                    // Dash addresses start with 'X'
@@ -119,20 +119,18 @@ public:
         strDataDir = "testnet3";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1437155768;
-        genesis.nNonce = 824901;
+        genesis.nTime = 1437166899;
+        genesis.nNonce = 2229198;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000007718a0b2820ddc9895e068a79499015abf2052be15ab0ca2e9cb9cbb7fc"));
+        assert(hashGenesisBlock == uint256("0x0000077c6c6761ba91585eca0e4fa6d082c8145664ddaba8b29bc7d973220ec5"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         /*vSeeds.push_back(CDNSSeedData("dashpay.io", "testnet-seed.dashpay.io"));
         vSeeds.push_back(CDNSSeedData("dash.qa", "testnet-seed.dash.qa"));
         *///legacy seeders
-        vSeeds.push_back(CDNSSeedData("darkcoin.io",  "testnet-seed.darkcoin.io"));
-        vSeeds.push_back(CDNSSeedData("darkcoin.qa", "testnet-seed.darkcoin.qa"));
-        vSeeds.push_back(CDNSSeedData("masternode.io", "test.dnsseed.masternode.io"));
+        vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(139);                    // Testnet dash addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = list_of( 19);                    // Testnet dash script addresses start with '8' or '9'
