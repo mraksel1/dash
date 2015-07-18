@@ -35,8 +35,8 @@ public:
         pchMessageStart[2] = 0xed;
         pchMessageStart[3] = 0x3a;
         vAlertPubKey = ParseHex("04c1e5d1a5e62754771124bfc3eeef04c4a679c69f47d3f720e717d721a19b63611807860b8c94e67363f2a2f90862e5b4f93bdf1d93837e5628a9390ecc499eb0");
-        nDefaultPort = 19500;
-        nRPCPort = 9988;
+        nDefaultPort = 9996;
+        nRPCPort = 11111;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);  // Dash starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
 
@@ -112,8 +112,8 @@ public:
         pchMessageStart[3] = 0xff;
 
         vAlertPubKey = ParseHex("04517d8a699cb43d3938d7b24faaff7cda448ca4ea267723ba614784de661949bf632d6304316b244646dea079735b9a6fc4af804efb4752075b9fe2245e14e412");
-        nDefaultPort = 19502;
-        nRPCPort = 19510;
+        nDefaultPort = 12999;
+        nRPCPort = 12111;
         strDataDir = "testnet3";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
@@ -157,7 +157,7 @@ public:
         genesis.nTime = 1437173200;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 1910335;
-        nDefaultPort = 19515;
+        nDefaultPort = 13004;
         strDataDir = "regtest";
 
         hashGenesisBlock = genesis.GetHash();

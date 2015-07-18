@@ -99,7 +99,7 @@ QT_TRANSLATE_NOOP("dash-core", ""
 "InstantX requires inputs with at least 6 confirmations, you might need to "
 "wait a few minutes and try again."),
 QT_TRANSLATE_NOOP("dash-core", ""
-"Listen for JSON-RPC connections on <port> (default: 9998 or testnet: 19998)"),
+"Listen for JSON-RPC connections on <port> (default: 11111 or testnet: 12111)"),
 QT_TRANSLATE_NOOP("dash-core", ""
 "Name to construct url for KeePass entry that stores the wallet passphrase"),
 QT_TRANSLATE_NOOP("dash-core", ""
@@ -192,7 +192,7 @@ QT_TRANSLATE_NOOP("dash-core", "Collateral is not valid."),
 QT_TRANSLATE_NOOP("dash-core", "Collateral not valid."),
 QT_TRANSLATE_NOOP("dash-core", "Connect only to the specified node(s)"),
 QT_TRANSLATE_NOOP("dash-core", "Connect through SOCKS proxy"),
-QT_TRANSLATE_NOOP("dash-core", "Connect to JSON-RPC on <port> (default: 9998 or testnet: 19998)"),
+QT_TRANSLATE_NOOP("dash-core", "Connect to JSON-RPC on <port> (default: 11111 or testnet: 12111)"),
 QT_TRANSLATE_NOOP("dash-core", "Connect to KeePassHttp on port <port> (default: 19455)"),
 QT_TRANSLATE_NOOP("dash-core", "Connect to a node to retrieve peer addresses, and disconnect"),
 QT_TRANSLATE_NOOP("dash-core", "Connection options:"),
@@ -273,7 +273,7 @@ QT_TRANSLATE_NOOP("dash-core", "Last Darksend was too recent."),
 QT_TRANSLATE_NOOP("dash-core", "Last successful darksend action was too recent."),
 QT_TRANSLATE_NOOP("dash-core", "Limit size of signature cache to <n> entries (default: 50000)"),
 QT_TRANSLATE_NOOP("dash-core", "List commands"),
-QT_TRANSLATE_NOOP("dash-core", "Listen for connections on <port> (default: 9999 or testnet: 19999)"),
+QT_TRANSLATE_NOOP("dash-core", "Listen for connections on <port> (default: 9996 or testnet: 12999)"),
 QT_TRANSLATE_NOOP("dash-core", "Loading addresses..."),
 QT_TRANSLATE_NOOP("dash-core", "Loading block index..."),
 QT_TRANSLATE_NOOP("dash-core", "Loading masternode cache..."),
